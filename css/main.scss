@@ -12,15 +12,27 @@ h1{
     margin: 4em;
 }
 
-.container{
+.container {
     width: 100%;
     overflow: hidden;
     position: relative;
 
-    .items{
+    .items {
         display: flex;
-        align-items: center;
+        align-items: center;    
         width: fit-content;
         animation: carouselAnim 100s infinite alternate linear;
+
+        .entry {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            width: 300px;
+            background: white;
+            margin: 1em;
+            padding: 0.5em;
+            border-radius: 10px;
+            box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.05);        }
     }
 }
