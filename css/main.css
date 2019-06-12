@@ -30,8 +30,8 @@ h1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -webkit-animation: carouselAnim 60s infinite alternate linear;
-          animation: carouselAnim 60s infinite alternate linear;
+  -webkit-animation: carouselAnim 50s infinite alternate linear;
+          animation: carouselAnim 50s infinite alternate linear;
 }
 
 .container .items .entry {
@@ -74,8 +74,8 @@ h1 {
             transform: translate(0, 0);
   }
   to {
-    -webkit-transform: translate(calc(-100% + (4*300px)));
-            transform: translate(calc(-100% + (4*300px)));
+    -webkit-transform: translate(calc(-550% + (4*300px)));
+            transform: translate(calc(-550% + (4*300px)));
   }
 }
 
@@ -85,8 +85,8 @@ h1 {
             transform: translate(0, 0);
   }
   to {
-    -webkit-transform: translate(calc(-100% + (4*300px)));
-            transform: translate(calc(-100% + (4*300px)));
+    -webkit-transform: translate(calc(-550% + (4*300px)));
+            transform: translate(calc(-550% + (4*300px)));
   }
 }
 
