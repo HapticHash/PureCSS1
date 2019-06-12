@@ -1,5 +1,5 @@
 # Pure CSS Carousel
-Here is another side project of Pure CSS Carousel which uses vanilla css.
+Here is a mini side project of Pure CSS Carousel which is built with vanilla css.
 
 ##  :mag_right: Project Preview
 ![Layout](https://HapticHash.github.io/PureCSS1/images/preview.png)
