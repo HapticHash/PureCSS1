@@ -8,13 +8,16 @@ body {
 
 h1 {
   text-align: center;
-  margin: 4em;
+  margin: 2.5em;
 }
 
 .container {
   width: 100%;
   overflow: hidden;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container .items {
@@ -27,8 +30,8 @@ h1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -webkit-animation: carouselAnim 100s infinite alternate linear;
-          animation: carouselAnim 100s infinite alternate linear;
+  -webkit-animation: carouselAnim 60s infinite alternate linear;
+          animation: carouselAnim 60s infinite alternate linear;
 }
 
 .container .items .entry {
@@ -50,5 +53,61 @@ h1 {
   border-radius: 10px;
   -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+.container .items .entry p {
+  text-align: center;
+  padding: 1em;
+}
+
+.container .items .entry p.name {
+  font-weight: bold;
+}
+
+.container .items .entry img {
+  width: 5vw;
+}
+
+@-webkit-keyframes carouselAnim {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(calc(-100% + (4*300px)));
+            transform: translate(calc(-100% + (4*300px)));
+  }
+}
+
+@keyframes carouselAnim {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(calc(-100% + (4*300px)));
+            transform: translate(calc(-100% + (4*300px)));
+  }
+}
+
+.container .faders {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.container .faders .left, .container .faders .right {
+  background: -webkit-gradient(linear, left top, right top, from(whitesmoke), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, whitesmoke 0%, rgba(255, 255, 255, 0) 100%);
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+}
+
+.container .faders .right {
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, from(whitesmoke), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, whitesmoke 0%, rgba(255, 255, 255, 0) 100%);
 }
 /*# sourceMappingURL=main.css.map */
